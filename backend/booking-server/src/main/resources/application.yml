@@ -48,8 +48,8 @@ jwt:
 
 wechat:
   miniapp:
-    appid: ${WX_APPID:wx801379289235bba3}
-    secret: ${WX_SECRET:aa06d76ae017a47600ebe4fa82780c5b}
+    appid: ${WX_APPID:}
+    secret: ${WX_SECRET:}
 
 logging:
   level:
