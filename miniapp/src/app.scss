@@ -1,0 +1,14 @@
+page {
+  --primary-color: #1677FF;
+  --danger-color: #FF4D4F;
+  --success-color: #52C41A;
+  --warning-color: #FAAD14;
+  --text-primary: #262626;
+  --text-secondary: #8C8C8C;
+  --border-color: #F0F0F0;
+  --bg-color: #F5F5F5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 28px;
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+}

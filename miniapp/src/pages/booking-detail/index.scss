@@ -1,0 +1,190 @@
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.detail-scroll {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 28px;
+  color: var(--text-secondary);
+}
+
+.status-header {
+  padding: 48px 32px 32px;
+  margin-bottom: 16px;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-label {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.booking-id {
+  font-size: 26px;
+  color: var(--text-secondary);
+}
+
+.info-card {
+  background-color: #fff;
+  margin: 0 24px 16px;
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 0;
+
+  & + & {
+    border-top: 1px solid var(--border-color);
+  }
+}
+
+.info-label {
+  font-size: 28px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.info-value {
+  font-size: 28px;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+  max-width: 60%;
+  word-break: break-all;
+}
+
+.remark-text {
+  font-size: 26px;
+  color: var(--text-secondary);
+}
+
+.price-highlight {
+  font-size: 36px;
+  font-weight: 700;
+  color: #FF4D4F;
+}
+
+.bottom-actions {
+  display: flex;
+  gap: 20px;
+  padding: 20px 32px 40px;
+  background-color: #fff;
+  border-top: 1px solid var(--border-color);
+}
+
+.action-btn {
+  flex: 1;
+  height: 88px;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.checkin-btn {
+  background: linear-gradient(135deg, #52C41A, #73d13d);
+  color: #fff;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #FF4D4F;
+  border: 2px solid #FF4D4F;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 600px;
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 48px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.modal-desc {
+  font-size: 28px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.modal-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.modal-btn {
+  flex: 1;
+  height: 80px;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  &.cancel {
+    background-color: #f5f5f5;
+    color: var(--text-secondary);
+  }
+
+  &.confirm {
+    background-color: #FF4D4F;
+    color: #fff;
+  }
+}

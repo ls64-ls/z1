@@ -1,0 +1,139 @@
+.room-card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 16px 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  .room-cover {
+    width: 120px;
+    min-height: 120px;
+    position: relative;
+    flex-shrink: 0;
+
+    .room-image-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .placeholder-text {
+        font-size: 36px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .room-status-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+
+      &.available {
+        background: rgba(82, 196, 26, 0.9);
+        color: #fff;
+      }
+
+      &.full {
+        background: rgba(255, 77, 79, 0.9);
+        color: #fff;
+      }
+    }
+  }
+
+  .room-info {
+    flex: 1;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    .room-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #262626;
+      margin-bottom: 4px;
+    }
+
+    .room-venue {
+      font-size: 13px;
+      color: #8c8c8c;
+      margin-bottom: 8px;
+    }
+
+    .room-meta {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 8px;
+
+      .meta-item {
+        font-size: 12px;
+        color: #595959;
+        background: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+    }
+
+    .room-amenities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+
+      .amenity-tag {
+        font-size: 11px;
+        color: #1677FF;
+        background: rgba(22, 119, 255, 0.08);
+        padding: 1px 6px;
+        border-radius: 3px;
+      }
+    }
+
+    .room-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+
+      .room-price {
+        display: flex;
+        align-items: baseline;
+        gap: 2px;
+
+        .price-value {
+          font-size: 18px;
+          font-weight: 700;
+          color: #FF4D4F;
+        }
+
+        .price-unit {
+          font-size: 12px;
+          color: #8c8c8c;
+        }
+      }
+
+      .book-btn {
+        background: #1677FF;
+        border-radius: 16px;
+        padding: 6px 16px;
+
+        &-active {
+          opacity: 0.8;
+        }
+
+        .book-btn-text {
+          font-size: 13px;
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

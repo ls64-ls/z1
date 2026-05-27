@@ -1,0 +1,32 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.log
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/
