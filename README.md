@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28296885/README.md)
 # WeChat Room Booking System
 
 微信会议室预订系统 — 基于 Spring Boot + Taro + Vue 3 的三层全栈应用，支持会议室浏览、时段选择、冲突检测、重复预订、签到管理等功能。
